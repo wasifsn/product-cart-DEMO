@@ -1,129 +1,160 @@
-.place {
-    align-items: center;
-}
-
-/* not getting selected */
-ul:nth-child(3) {
-    padding-left: 22px !important;
-}
-
-#mycart {
-    border: 1px solid black;
-    border-radius: 25px !important;
-    height: 500px;
-    width: 500px;
-    display: flex;
-}
-
-#price_details {
-    border: 1px solid black;
-    height: 500px;
-    width: 500px;
-    display: flex;
-}
-
 body {
-    background-color: #EEEEEE;
+  background-color: #eeeeee;
+  font-family: sans-serif
 }
 
 .user {
-    display: flex;
-    background: #FFFFFF;
-
+  display: flex;
+  background: #ffffff;
+  padding: 1em 1em;
+  margin-left: 1em;
 }
 
-
-.border ul {
-    list-style: none;
-}
-
-#product_image {
-    width: 70px;
-    height: 70px;
-}
-
-.header1 h3 {
-    margin-left: 20px;
+ul {
+  list-style: none;
+  margin: 0px 0px;
 }
 
 ul li button {
-    border-radius: 50%;
-    /* display: block; */
-    height: 30px;
-    width: 30px;
+  border-radius: 50%;
+  /* display: block; */
+  height: 30px;
+  width: 30px;
 }
 
-[title~=heading] {
-    text-transform: uppercase;
-    font-size: 16px;
+[title~="heading"] {
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
-[title~=price] {
-    font-weight: 500;
+[title~="price"] {
+  font-weight: 500;
 }
 
 ul li {
-    line-height: 25px;
-    font-size: 14px;
+  line-height: 25px;
+  font-size: 14px;
+  list-style: none;
 }
 
 .count {
-    width: 20px;
-    border: none;
+  width: 20px;
+  border: none;
 }
 
 #count {
-    width: 20px;
-    border: none;
+  width: 20px;
+  border: none;
 }
 
-
-
 #priceLi-1 {
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 #priceLi-2 {
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 3.6rem;
 }
 
 #priceLi-3 {
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .price-details {
-    text-align: left;
-    margin-right: 40px;
+  text-align: left;
+  margin-right: 40px;
 }
 
 #total_price {
-    padding-left: 5rem;
-    font-weight: 200;
+  padding-left: 4.7rem;
+  font-weight: 200;
+
 }
 
 #delivery_charges {
-    padding-left: 2rem;
-    font-weight: 200;
+  padding-left: 2rem;
+  font-weight: 200;
 }
 
 #amount_payable {
-    padding-left: 2.2rem;
-    font-weight: 200;
+  padding-left: 2.2rem;
+  font-weight: 200;
 }
 
 #pincodeIP {
-    border: none;
-    border-bottom: 1px solid grey;
-    height: 4vh;
+  border: none;
+  border-bottom: 1px solid grey;
+  height: 4vh;
 }
 
 #check_pincodes {
-    border: none;
-    height: 4vh;
+  border: none;
+  height: 4vh;
+}
+
+.myCart {
+  border-radius: 1%;
+  box-shadow: 2px 2px 4px grey;
+  float: left;
+  background-color: white;
+}
+
+.priceDetails {
+  box-shadow: 2px 2px 4px grey;
+  float: left;
+  background-color: white;
+  border-radius: 1%;
+  padding: 1em 0px;
+  margin-left: 4em;
+}
+
+.count {
+  padding-left: 5px;
+}
+
+/* new CSS */
+
+.ProductContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.myCarth1 {
+  display: flex;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding-left: 3em;
+  padding-top: 1em;
+}
+
+.productHeaderSearch {
+  display: flex;
+  padding-top: 5px;
+}
+
+.myCartIp {
+  margin: 18px 18px;
+  padding-right: 5px;
+}
+
+.checkBtn {
+  margin: 18px 18px;
+  padding-right: 5px;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 4em;
 }
