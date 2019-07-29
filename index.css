@@ -1,6 +1,6 @@
 body {
   background-color: #eeeeee;
-  font-family: sans-serif
+  font-family: sans-serif;
 }
 
 .user {
@@ -75,7 +75,6 @@ ul li {
 #total_price {
   padding-left: 4.7rem;
   font-weight: 200;
-
 }
 
 #delivery_charges {
@@ -157,4 +156,138 @@ ul li {
   align-items: center;
   flex-direction: row;
   margin: 4em;
+  flex: 1;
+}
+
+.pseudo_container {
+  display: flex;
+  flex: 1;
+}
+
+/* ------------------------------ */
+
+.product {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ##########################  PRODUCT HEADER ############################ */
+.product_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.product_header_title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.product_header_pincode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.product_header_pincode_search {
+  padding: 5px;
+}
+
+.product_header_pincode_search>input {
+  border: 0px;
+  border-bottom: 1px solid grey;
+}
+
+.product_header_pincode_btn {
+  padding: 5px;
+}
+
+.product_header_pincode_btn>button {
+  font-size: 10px;
+  background-color: #bebebe;
+  padding: 4px 6px;
+}
+
+/* ##########################  PRODUCT ITEM ############################ */
+.product_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.product_item_image {
+  padding: 10px;
+}
+
+.item_image {
+  height: 100px;
+
+}
+
+.product_item_details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.item_name {
+  font-size: 16px;
+}
+
+.item_price {
+  padding: 3px 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item_delivery {
+  padding: 3px 0px;
+  font-size: 14px;
+}
+
+.item_num {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px 0px;
+}
+
+.minus_btn {
+  padding: 2px 0px;
+}
+
+.minus_btn button {
+  border: 0px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #a9a9a9;
+}
+
+.item_num_value {
+  padding: 2px 4px;
+}
+
+.plus_btn {
+  padding: 2px 0px;
+}
+
+.plus_btn button {
+  border: 0px;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  background-color: #a9a9a9;
+}
+
+.available {
+  padding: 2px 10px;
+  font-weight: bold;
 }
