@@ -1,6 +1,6 @@
 window.onload = function () {
-    init();
-    doSomethingElse();
+
+
 };
 
 // var cart_item = [1, 1, 1, 1];
@@ -57,8 +57,8 @@ function populateItems(items) { // populate data
                 <img src="${items[i].product_meta.img}" class="item_image" />
                 </div>
                 <div class="product_item_details">
-                <div  class="item_name">${items[i].product_meta.title}</div>
-                <div  class="item_price">${items[i].pricing.selling_price}</div>
+                <div title="heading" >${items[i].product_meta.title}</div>
+                <div title="price" class="item_price">${items[i].pricing.selling_price}</div>
                 <div class="item_delivery"> Delivery: ${delivery_status}</div>
                 <div class="item_num">
                 <div class="plus_btn" >
@@ -84,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => { //call the loadPage functi
 
 // 3rd API call for add and remove items functionality.
 
+// function init(){
+
+// }
 var removeFromCart = function decrease(index) { // function to remove 1 qty from cart.
     if (cart_item[index] > 0) {
         cart_item[index] -= 1; // decrement the value of counter
@@ -109,7 +112,7 @@ function update(index, ch) {
             tot = data[index].pricing.selling_price; //saves the selling price of the item.
             del = data[index].pricing.delivery_charge; // saves the delivery price of the item.
             console.log(index, tot, del);
-            arr = [tot, del];
+            arr = [tot, del]; //saved values of tot and del variables are saved in this arr variable
             return arr;
         })
         .then(arr => {
