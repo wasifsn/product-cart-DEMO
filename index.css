@@ -321,6 +321,14 @@ button:focus {
   .priceDetails {
     margin-top: 4em;
     align-content: center;
-    margin-left: 0px;
+    /* margin-left: 0px; */
+  }
+
+
+}
+
+@media (max-width: 800px) {
+  .mainContainer {
+    margin: 0;
   }
 }
